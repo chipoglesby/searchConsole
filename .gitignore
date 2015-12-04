@@ -1,0 +1,9 @@
+
+# Files to ignore #
+###################
+*.json
+archive/
+*.dat
+1search.py
+python.txt
+*.DS_Store
