@@ -1,0 +1,11 @@
+steps:
+  # Pull Search Console repo to include in the build.
+  - name: 'gcr.io/cloud-builders/gcloud'
+args: ['source', 'repos', 'clone', 'searchConsole']
+
+# Build Docker image: docker build -f Dockerfile -t  .
+- name: 'gcr.io/cloud-builders/docker'
+args: ['build', '-t', 'gcr.io/xxx/searchconsole', '.']
+
+# Push the latest image to the container registry
+images: ['gcr.io/xxx/searchconsole']

@@ -1,4 +1,3 @@
-
 # Files to ignore #
 ###################
 *.json
@@ -7,3 +6,7 @@ archive/
 1search.py
 python.txt
 *.DS_Store
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
